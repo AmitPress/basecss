@@ -1,0 +1,11 @@
+CSS {
+	Program = Statement+
+    Statement = Selector "{" Body+ "}"
+    Selector = ElementSelector
+    ElementSelector = letter alnum*
+    
+    Body = PVpair
+    PVpair = Property ":" Value ";"
+    Property = letter ( letter | "-" )*
+    Value = letter alnum*
+}
